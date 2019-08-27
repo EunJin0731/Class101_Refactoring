@@ -5,7 +5,7 @@ export default class Vehicle {
   public wheels: Wheel[];
   private fuel: number; // 0~100
 
-  c(numberOfWheels: number, wheels: Wheel[], fuel: number) {
+  constructor(numberOfWheels: number, wheels: Wheel[], fuel: number) {
     this.numberOfWheels = numberOfWheels;
     this.wheels = wheels;
     this.fuel = fuel;

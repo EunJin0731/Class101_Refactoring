@@ -1,38 +1,38 @@
 import Vehicle from './Vehicle';
 
 export class Wheel {
-  public kind: string;
-  public rpm: number = 0;
+    public kind: string;
+    public rpm: number = 0;
 
-  constructor(kind) { this.kind = kind; }
+    constructor(kind) { this.kind = kind; }
 
-  public setNewRPM(r: number) {
-    this.rpm = r;
-  }
+    public setNewRPM(r: number) {
+        this.rpm = r;
+    }
 }
 
 class Car extends Vehicle {
-  // 시동을 켠다
-  public run() {
-    for (let i = 0; i < this.getNumberOfWheels(); i++) {
-      this.wheels[i].rpm = 5;
+    // 시동을 켠다
+    public run() {
+        for (let i = 0; i < this.getNumberOfWheels(); i++) {
+            this.wheels[i].rpm = 5;
+        }
     }
-  }
-  public isRoadEmpty(vehicles: Vehicle[]) {
-    return vehicles.length === 0;
-  }
+    public isRoadEmpty(vehicles: Vehicle[]) {
+        return vehicles.length === 0;
+    }
 }
 
 class Bike extends Vehicle {
-  // 페달을 밟는다
-  public start(){
-    for (let i = 0; i < this.getNumberOfWheels(); i++) {
-      this.wheels[i].rpm = 8;
+    // 페달을 밟는다
+    public start(){
+        for (let i = 0; i < this.getNumberOfWheels(); i++) {
+            this.wheels[i].rpm = 8;
+        }
     }
-  }
-  public isRoadEmpty(vehicles: Vehicle[]) {
-    return vehicles.length === 0;
-  }
+    public isRoadEmpty(vehicles: Vehicle[]) {
+        return vehicles.length === 0;
+    }
 }
 
 // ------------
