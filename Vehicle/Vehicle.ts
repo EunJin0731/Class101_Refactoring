@@ -10,6 +10,7 @@ export default class Vehicle {
     this.wheels = wheels;
     this.fuel = fuel;
   }
+
   public getNumberOfWheels() { return this.numberOfWheels; }
 
   public getFuel() {return this.fuel; }

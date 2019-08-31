@@ -1,7 +1,7 @@
-import Vehicle from './Vehicle';
-import {Wheel} from './Wheel';
-import {Car} from './Car';
-import {Bike} from './Bike';
+import Vehicle from './Vehicle/Vehicle';
+import {Wheel} from './Vehicle/Wheel';
+import {Car} from './Drive/Car';
+import {Bike} from './Drive/Bike';
 
 const road: Vehicle[] = [];
 
