@@ -2,7 +2,9 @@ import { Wheel } from './Wheel';
 
 export default class Vehicle {
   private numberOfWheels: number; // bigger than -1
+
   public wheels: Wheel[];
+
   private fuel: number; // 0~100
 
   constructor(numberOfWheels: number, wheels: Wheel[], fuel: number) {
